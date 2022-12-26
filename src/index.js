@@ -23,7 +23,7 @@ class Square extends React.Component {
         }
     }
     
-    hadleClick(i) {
+    handleClick(i) {
         const squares = this.state.squares.slice();
         squares[i] = 'X';
         this.setState({squares: squares})
@@ -32,7 +32,7 @@ class Square extends React.Component {
     renderSquare(i) {
         return <Square 
                 value={this.state.squares[i]}
-                onClick={() => this.hadleClick(i)} />
+                onClick={() => this.handleClick(i)} />
     }
   
     render() {
